@@ -1,0 +1,26 @@
+creditcards:
+    project: 'student-mlops5'
+    region: 'us-central1' 
+    docker_repo: 'us-central1-docker.pkg.dev/student-mlops5/creditcards'
+    service_account: '743451655808-compute@developer.gserviceaccount.com'
+    vertex_dataset_name: 'creditcards'
+    raw_schema_dir: 'src/raw_schema'
+    bucket: 'student-mlops5'
+    limit: 5000
+    version: 'v02'
+    cloudfunction_region: '${region}'
+    artifactregistry_region: '${region}'
+    python_pkg_repo: 'pyrepo'
+    bq:
+       dataset: 'creditcards'
+       location: 'us-central1'
+       source_table: 'creditcards'
+       ml_table: 'creditcards_ml'
+    dataflow:
+        subnet: '${subnetwork}'
+        service_account: '743451655808-compute@developer.gserviceaccount.com'
+    featurestore_id: 'creditcards'
+    git:
+        repo_url: "git@github.com:studentbm/rafal.git"
+        branch: "main"     
+ 
