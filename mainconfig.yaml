@@ -22,5 +22,5 @@ creditcards:
     featurestore_id: 'creditcards'
     git:
         repo_url: "git@github.com:studentbm/rafal.git"
-        branch: "main"     
+        branch: "master"     
  
